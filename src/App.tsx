@@ -1,8 +1,8 @@
-import './App.css'
-import Background from './components/layout/Background'
-import Footer from './components/layout/Footer'
-import Header from './components/layout/Header'
-import Home from './pages/Home'
+import "./App.css";
+import Background from "./components/layout/Background";
+import Footer from "./components/layout/Footer";
+import Header from "./components/layout/Header";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

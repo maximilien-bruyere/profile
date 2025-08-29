@@ -18,16 +18,23 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/src/assets/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  src: url("/src/assets/fonts/montserrat/Montserrat-SemiBold.ttf")
+    format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/src/assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  src: url("/src/assets/fonts/montserrat/Montserrat-Bold.ttf")
+    format("truetype");
   font-weight: 700;
 }
 
 @theme {
   --font-sans: "Inter", sans-serif;
   --font-heading: "Montserrat", sans-serif;
+  --color-primary: #141414;
+  --color-secondary: #292929;
+  --color-color-text-primary: #ffffff;
+  --color-color-text-secondary: #c7c7c7;
+  --color-accent: #f6c245;
 }
