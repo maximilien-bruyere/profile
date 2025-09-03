@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "menu": {
+    "close": "Fermer",
+    "language": "Langue"
+  }
+}
