@@ -11,7 +11,7 @@ const Hamburger: React.FC<Props> = ({ isOpen = false, toggle }) => {
       aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
       aria-expanded={isOpen}
       onClick={toggle}
-      className="w-8 h-8 bg-black border border-gray-600 flex flex-col justify-center items-center gap-[3px] p-1 rounded-sm"
+      className="w-8 h-8 bg-primary border border-white/20 flex flex-col justify-center items-center gap-[4px] p-1 rounded-sm"
     >
       <span
         className={`block w-4 h-[2px] bg-accent transition-transform duration-200 ${

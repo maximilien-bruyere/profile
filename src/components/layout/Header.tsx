@@ -1,85 +1,28 @@
 import Hamburger from "../ui/hamburger/Hamburger";
 import useHamburger from "../../hooks/useHamburger";
+import Nav from "../ui/navigation/Nav";
+import MobileNav from "../ui/navigation/MobileNav";
 
 const Header = () => {
   const { isOpen, toggle, close } = useHamburger();
 
   return (
-    <header className="relative p-4 flex items-center justify-between">
-      {/** Menu Hamburger Smartphone */}
-      <div className="md:hidden">
+    <header className="relative p-5 flex items-center justify-between border-b border-white/20">
+      <div className="md:hidden flex flex-row justify-between w-full items-center">
         <Hamburger isOpen={isOpen} toggle={toggle} />
+        <h1 className="font-heading bg-gradient-to-r from-color-text-secondary to-color-text-primary bg-clip-text text-transparent pr-1">
+          Maximilien
+        </h1>
       </div>
 
-      {/** Navigation - Tablette */}
-      <nav className="hidden md:flex gap-6 items-center">
-        <a href="#home" className="hover:underline">
-          Home
-        </a>
-        <a href="#about" className="hover:underline">
-          About
-        </a>
-        <a href="#portfolio" className="hover:underline">
-          Portfolio
-        </a>
-        <a href="#contact" className="hover:underline">
-          Contact
-        </a>
-      </nav>
+      <div className="hidden md:flex justify-around items-center w-full">
+        <h1 className="font-heading bg-gradient-to-r from-color-text-secondary to-color-text-primary bg-clip-text text-transparent text-lg">
+          Maximilien
+        </h1>
+        <Nav />
+      </div>
 
-      {/** Navigation - Mobile */}
-      {isOpen && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          className="fixed inset-0 z-50 flex md:hidden"
-        >
-          <div
-            className="w-72 max-w-full bg-secondary text-white p-6 shadow-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={close}
-              className="mb-6 text-sm underline underline-offset-6 active:text-accent transition-colors duration-200"
-            >
-              Fermer
-            </button>
-
-            <nav className="flex flex-col gap-3">
-              <a
-                href="#home"
-                onClick={close}
-                className="active:text-accent transition-colors duration-200"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                onClick={close}
-                className="active:text-accent transition-colors duration-200"
-              >
-                About
-              </a>
-              <a
-                href="#portfolio"
-                onClick={close}
-                className="active:text-accent transition-colors duration-200"
-              >
-                Portfolio
-              </a>
-              <a
-                href="#contact"
-                onClick={close}
-                className="active:text-accent transition-colors duration-200"
-              >
-                Contact
-              </a>
-            </nav>
-          </div>
-
-          <div className="flex-1 bg-black/50" onClick={close} />
-        </div>
-      )}
+      <MobileNav isOpen={isOpen} close={close} />
     </header>
   );
 };
