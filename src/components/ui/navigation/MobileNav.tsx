@@ -1,6 +1,6 @@
 import { useLanguage } from "../../../hooks/useLanguage";
 import { useTranslation } from "react-i18next";
-// ...existing code...
+import { Link } from "react-scroll";
 
 type Props = {
   isOpen: boolean;
@@ -8,10 +8,8 @@ type Props = {
 };
 
 const MobileNav = ({ isOpen, close }: Props) => {
-  // no local langRef needed for MobileNav
   const { t } = useTranslation();
   const { selectedLang, changeLanguage, languages } = useLanguage();
-  // no local langOpen state in MobileNav; clicks outside language selector handled in parent if needed
 
   return (
     <>
@@ -29,34 +27,42 @@ const MobileNav = ({ isOpen, close }: Props) => {
             </button>
 
             <nav className="flex flex-col gap-3">
-              <a
-                href="#home"
+              <Link
+                to="home"
                 onClick={close}
+                smooth={true}
+                duration={500}
                 className="active:text-color-text-secondary transition-colors duration-200"
               >
                 {t("nav.home")}
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="about"
                 onClick={close}
+                smooth={true}
+                duration={500}
                 className="active:text-color-text-secondary transition-colors duration-200"
               >
                 {t("nav.about")}
-              </a>
-              <a
-                href="#portfolio"
+              </Link>
+              <Link
+                to="portfolio"
                 onClick={close}
+                smooth={true}
+                duration={500}
                 className="active:text-color-text-secondary transition-colors duration-200"
               >
                 {t("nav.portfolio")}
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="contact"
                 onClick={close}
+                smooth={true}
+                duration={500}
                 className="active:text-color-text-secondary transition-colors duration-200"
               >
                 {t("nav.contact")}
-              </a>
+              </Link>
 
               <div className="mt-4 pt-4 border-t border-white/10">
                 <p className="text-sm mb-2">{t("menu.language")}</p>

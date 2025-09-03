@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { useLanguage } from "../../../hooks/useLanguage";
 import { useTranslation } from "react-i18next";
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   const { t } = useTranslation();
@@ -10,18 +11,11 @@ const Nav = () => {
 
   return (
     <nav className="hidden md:flex gap-6 items-center justify-center text-color-text-primary text-sm">
-      <a href="#home" className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">
-        {t("nav.home")}
-      </a>
-      <a href="#about" className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">
-        {t("nav.about")}
-      </a>
-      <a href="#portfolio" className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">
-        {t("nav.portfolio")}
-      </a>
-      <a href="#contact" className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">
-        {t("nav.contact")}
-      </a>
+
+      <Link to="home" smooth={true} duration={500} className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">{t("nav.home")}</Link>
+      <Link to="about" smooth={true} duration={500} className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">{t("nav.about")}</Link>
+      <Link to="portfolio" smooth={true} duration={500} className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">{t("nav.portfolio")}</Link>
+      <Link to="contact" smooth={true} duration={500} className="hover:cursor-pointer hover:underline underline-offset-10 active:text-color-text-secondary transition-colors duration-200">{t("nav.contact")}</Link>
 
       <div ref={langRef} className="relative ml-4">
         <button
