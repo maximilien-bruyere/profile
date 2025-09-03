@@ -28,7 +28,7 @@ const Nav = () => {
           type="button"
           onClick={() => setLangOpen((s) => !s)}
           aria-expanded={langOpen}
-          className="flex items-center gap-2 px-3 py-1 border border-white/30 rounded-md text-sm bg-white/5 hover:bg-white/10 hover:cursor-pointer"
+          className="flex items-center gap-2 px-2 py-1 border border-white/30 rounded-md text-sm bg-white/5 hover:bg-white/10 hover:cursor-pointer"
         >
           <span className="font-medium text-accent">{selectedLang}</span>
           <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">

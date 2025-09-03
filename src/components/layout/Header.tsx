@@ -15,7 +15,7 @@ const Header = () => {
         </h1>
       </div>
 
-      <div className="hidden md:flex justify-around items-center w-full">
+      <div className="hidden md:flex justify-around items-center w-full ">
         <h1 className="font-heading bg-gradient-to-r from-color-text-secondary to-color-text-primary bg-clip-text text-transparent text-lg">
           Maximilien
         </h1>
