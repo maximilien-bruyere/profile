@@ -8,5 +8,80 @@
   "menu": {
     "close": "Fermer",
     "language": "Langue"
+  },
+  "home": {
+    "greeting": "Bonjour, je m'appelle",
+    "title": "Maximilien",
+    "subtitle": "Étudiant en Informatique",
+    "description": "Je suis passionné par l'infrastructure, les réseaux ainsi que par les systèmes.",
+    "cta": "Voir mes projets"
+  },
+  "about": {
+    "title": "Informations Générales",
+    "subtitle": "Étudiant en Informatique",
+    "description": "Je suis étudiant en 3e année d'informatique orientation réseaux & télécommunications en option sécurité à la Haute École en Hainaut. Je suis passionné par les infrastructures programmables, les réseaux ainsi que les systèmes UNIX.",
+    "skills": "Mes Compétences",
+    "education": {
+      "title": "Formation",
+      "school": "Haute École en Hainaut",
+      "degree": "Informatique (sécurité)",
+      "year": "3e année"
+    },
+    "location": {
+      "title": "Localisation",
+      "country": "Belgique, Hainaut"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "first": "Cisco - Introduction aux réseaux",
+      "second": "Cisco - Introduction à la cybersécurité"
+    },
+    "languages": {
+      "title": "Langues",
+      "french": "Français (natif)",
+      "english": "Anglais (intermédiaire)"
+    },
+    "categories": {
+      "web": "Technologies Web",
+      "infrastructure": "Infrastructure & DevOps", 
+      "programming": "Programmation",
+      "databases": "Bases de Données",
+      "systems": "Systèmes & Hardware",
+      "other": "Autres"
+    },
+    "interests": {
+      "title": "Passions & Intérêts",
+      "interest_1": "Infrastructures Programmables",
+      "interest_2": "Réseaux et télécommunications",
+      "interest_3": "Open-source"
+    },
+    "stats": {
+      "technologies": "Technologies",
+      "projects": "Projets Concrets",
+      "years": "Années d'études"
+    }
+  },
+  "portfolio": {
+    "title": "Mes Projets",
+    "subtitle": "Projets en Développement",
+    "viewProject": "Voir le Projet",
+    "viewCode": "Voir le Code",
+    "inDevelopment": "En développement"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Travaillons ensemble",
+    "description": "N'hésitez pas à me contacter pour discuter de projets ou d'opportunités de collaboration",
+    "info": {
+      "title": "Informations de Contact",
+      "email": "Email",
+      "location": "Localisation",
+      "education": "Études",
+      "languages": "Langues"
+    },
+    "buttons": {
+      "github": "Voir mon GitHub",
+      "linkedin": "Voir mon LinkedIn"
+    }
   }
 }

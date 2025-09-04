@@ -25,7 +25,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
         aria-modal="true"
         role="dialog"
         aria-hidden={!isOpen}
-        className={`fixed top-0 left-0 z-50 w-72 h-full max-w-full bg-secondary text-white p-6 shadow-xl md:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 z-50 w-72 min-w-[270px] h-full max-w-full bg-secondary text-white p-6 shadow-xl md:hidden transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         onClick={(e) => e.stopPropagation()}

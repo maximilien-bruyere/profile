@@ -8,5 +8,79 @@
   "menu": {
     "close": "Close",
     "language": "Language"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "title": "Maximilien",
+    "subtitle": "IT Student",
+    "description": "I am passionate about infrastructure, networks and systems.",
+    "cta": "View My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Computer Science Student",
+    "description": "I am a third-year student studying computer science with a focus on networks and telecommunications, specialising in security, at the Haute École en Hainaut. I am passionate about programmable infrastructure, networks and UNIX systems.",
+    "skills": "My Skills",
+    "education": {
+      "title": "Education",
+      "school": "Haute École en Hainaut",
+      "degree": "Computer Security",
+      "year": "3rd year"
+    },
+    "location": {
+      "title": "Location",
+      "country": "Belgium, Hainaut"
+    },
+    "certifications": {
+      "title": "Certifications",
+      "first": "Cisco - Introduction to Networks",
+      "second": "Cisco - Introduction to Cybersecurity"
+    },
+    "languages": {
+      "title": "Languages",
+      "french": "French (native)",
+      "english": "English (intermediate)"
+    },
+    "categories": {
+      "web": "Web Technologies",
+      "infrastructure": "Infrastructure & DevOps",
+      "databases": "Databases", 
+      "systems": "Systems & Hardware",
+      "other": "Other"
+    },
+      "interests": {
+      "title": "Passions & Interests",
+      "interest_1": "Programmable Infrastructure",
+      "interest_2": "Networks and telecommunications",
+      "interest_3": "Open-source"
+    },
+    "stats": {
+      "technologies": "Technologies",
+      "projects": "Concrete Projects",
+      "years": "Years of study"
+    }
+  },
+  "portfolio": {
+    "title": "My Projects",
+    "subtitle": "Projects in Development",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "inDevelopment": "In development"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's Work Together",
+    "description": "Feel free to contact me to discuss projects or collaboration opportunities",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "location": "Location",
+      "education": "Education",
+      "languages": "Languages"
+    },
+    "buttons": {
+      "github": "View my GitHub",
+      "linkedin": "View my LinkedIn"
+    }
   }
 }

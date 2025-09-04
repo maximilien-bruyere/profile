@@ -6,24 +6,40 @@ import Contact from "./sections/Contact";
 
 const Profile: React.FC = () => {
   return (
-    <main className="min-h-screen scroll-smooth md:pt-17">
-      {/* Hero / Home */}
-      <section id="home" aria-label="Home" className="py-50 bg-secondary/10">
+    <main className="min-h-screen scroll-smooth ">
+      {/* Hero / Home - Full viewport height */}
+      <section 
+        id="home" 
+        aria-label="Home" 
+        className="min-h-screen bg-secondary/20 md:pt-10"
+      >
         <Home />
       </section>
 
-      {/* About */} 
-      <section id="about" aria-label="About" className="py-50">
+      {/* About - Contrasting background */} 
+      <section 
+        id="about" 
+        aria-label="About" 
+        className="py-16 md:py-20 lg:py-24 bg-secondary/10"
+      >
         <About />
       </section>
 
-      {/* Portfolio */}
-      <section id="portfolio" aria-label="Portfolio" className="py-50 bg-secondary/20">
+      {/* Portfolio - Darker background for contrast */}
+      <section 
+        id="portfolio" 
+        aria-label="Portfolio" 
+        className="py-16 md:py-20 lg:py-24 bg-secondary/20"
+      >
         <Portfolio />
       </section>
 
-      {/* Contact */}
-      <section id="contact" aria-label="Contact" className="py-50">
+      {/* Contact - Light background */}
+      <section 
+        id="contact" 
+        aria-label="Contact" 
+        className="py-16 md:py-20 lg:py-24 bg-secondary/10"
+      >
         <Contact />
       </section>
     </main>

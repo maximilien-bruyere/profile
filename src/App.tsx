@@ -6,19 +6,15 @@ import Profile from "./pages/profile/Profile";
 
 function App() {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body>
-        <div className="relative min-h-screen">
-          <Background />
+    <div className="relative min-h-screen">
+      <Background />
 
-          <div className="relative z-10 h-1000">
-            <Header />
-            <Profile />
-            <Footer />
-          </div>
-        </div>
-      </body>S
-    </html>
+      <div className="relative z-10 h-1000">
+        <Header />
+        <Profile />
+        <Footer />
+      </div>
+    </div>
   );
 }
 

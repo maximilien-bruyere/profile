@@ -7,7 +7,7 @@ const Header = () => {
   const { isOpen, toggle, close } = useHamburger();
 
   return (
-    <header className="bg-primary p-5 flex items-center justify-between border-b border-white/20 fixed w-full">
+    <header className="bg-primary p-5 flex items-center justify-between border-b border-white/20 fixed w-full top-0 z-50">
       <div className="md:hidden flex flex-row justify-between w-full items-center">
         <Hamburger isOpen={isOpen} toggle={toggle} />
         <h1 className="font-heading bg-gradient-to-r from-color-text-secondary to-color-text-primary bg-clip-text text-transparent pr-1">
