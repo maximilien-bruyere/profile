@@ -6,7 +6,6 @@ type Props = {
   isOpen: boolean;
   close: () => void;
 };
-
 const MobileNav = ({ isOpen, close }: Props) => {
   const { t } = useTranslation();
   const { selectedLang, changeLanguage, languages } = useLanguage();
@@ -21,7 +20,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
           >
             <button
               onClick={close}
-              className="text-color-text-secondary mb-6 text-sm underline underline-offset-6 active:text-accent transition-colors duration-200"
+              className="text-color-text-secondary mb-6 text-sm underline underline-offset-6 active:text-accent transition-colors duration-200 hover:text-color-text-secondary/80 hover:cursor-pointer"
             >
               {t("menu.close")}
             </button>
@@ -30,9 +29,9 @@ const MobileNav = ({ isOpen, close }: Props) => {
               <Link
                 to="home"
                 onClick={close}
-                smooth={true}
+                smooth={true} 
                 duration={500}
-                className="active:text-color-text-secondary transition-colors duration-200"
+                className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90 transition-colors duration-200 hover:cursor-pointer"
               >
                 {t("nav.home")}
               </Link>
@@ -41,7 +40,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
                 onClick={close}
                 smooth={true}
                 duration={500}
-                className="active:text-color-text-secondary transition-colors duration-200"
+                className="w-18 hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
               >
                 {t("nav.about")}
               </Link>
@@ -50,7 +49,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
                 onClick={close}
                 smooth={true}
                 duration={500}
-                className="active:text-color-text-secondary transition-colors duration-200"
+                className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
               >
                 {t("nav.portfolio")}
               </Link>
@@ -59,7 +58,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
                 onClick={close}
                 smooth={true}
                 duration={500}
-                className="active:text-color-text-secondary transition-colors duration-200"
+                className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
               >
                 {t("nav.contact")}
               </Link>
@@ -74,7 +73,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
                         changeLanguage(l.code);
                         close();
                       }}
-                      className={`px-3 py-1 rounded-md text-sm active:text-color-text-secondary transition-colors duration-200 ${
+                      className={`hover:cursor-pointer px-3 py-1 rounded-md text-sm active:text-color-text-secondary transition-colors duration-200 ${
                         selectedLang === l.code
                           ? "bg-white/10"
                           : "hover:bg-white/5"
