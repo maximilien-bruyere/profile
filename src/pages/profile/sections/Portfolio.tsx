@@ -238,16 +238,16 @@ const Portfolio = () => {
     <div className="container mx-auto px-4 md:px-8 lg:px-12">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-color-text-primary mb-4">
+        <div className="text-center mb-16 lg:mb-20">
+          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-color-text-primary mb-6">
             {t("portfolio.title")}
           </h2>
-          <p className="text-accent text-xl md:text-2xl font-medium mb-8">
+          <p className="text-accent text-2xl md:text-3xl lg:text-4xl font-medium mb-12">
             {t("portfolio.subtitle")}
           </p>
           
           {/* Filters Section */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 mb-12">
             {/* Category Filter */}
             <div className="relative group">
               <div className="relative">
@@ -255,7 +255,7 @@ const Portfolio = () => {
                   id="category-select"
                   value={filter}
                   onChange={(e) => setFilter(e.target.value)}
-                  className="appearance-none bg-primary border border-secondary rounded-xl px-4 py-3 pr-10 text-color-text-primary font-medium focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300 min-w-[200px] cursor-pointer hover:border-accent/50 hover:bg-secondary/10"
+                  className="appearance-none bg-primary border border-secondary rounded-xl px-6 py-4 pr-12 text-color-text-primary font-medium focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300 min-w-[240px] cursor-pointer hover:border-accent/50 hover:bg-secondary/10 text-lg"
                 >
                   {categories.map((category) => (
                     <option key={category.id} value={category.id} className="bg-primary text-color-text-primary py-2">
@@ -263,8 +263,8 @@ const Portfolio = () => {
                     </option>
                   ))}
                 </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <svg className="w-5 h-5 text-color-text-secondary group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                  <svg className="w-6 h-6 text-color-text-secondary group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
@@ -278,7 +278,7 @@ const Portfolio = () => {
                   id="type-select"
                   value={typeFilter}
                   onChange={(e) => setTypeFilter(e.target.value)}
-                  className="appearance-none bg-primary border border-secondary rounded-xl px-4 py-3 pr-10 text-color-text-primary font-medium focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300 min-w-[200px] cursor-pointer hover:border-accent/50 hover:bg-secondary/10"
+                  className="appearance-none bg-primary border border-secondary rounded-xl px-6 py-4 pr-12 text-color-text-primary font-medium focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20 transition-all duration-300 min-w-[240px] cursor-pointer hover:border-accent/50 hover:bg-secondary/10 text-lg"
                 >
                   <option value="all" className="bg-primary text-color-text-primary py-2">
                     🎯 {t("portfolio.filters.all")}
@@ -290,8 +290,8 @@ const Portfolio = () => {
                     🎓 {t("portfolio.filters.school")}
                   </option>
                 </select>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                  <svg className="w-5 h-5 text-color-text-secondary group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+                  <svg className="w-6 h-6 text-color-text-secondary group-hover:text-accent transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
@@ -301,22 +301,22 @@ const Portfolio = () => {
         </div>
 
         {/* All Projects Grid */}
-        <div className="mb-16">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="mb-20">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="bg-primary border border-white/8 rounded-lg overflow-hidden hover:border-accent/50 transition-all duration-300 hover:transform hover:scale-[1.02] group flex flex-col h-96"
+                className="bg-primary border border-white/8 rounded-xl overflow-hidden hover:border-accent/50 transition-all duration-300 hover:transform hover:scale-[1.02] group flex flex-col h-auto md:h-[550px]"
               >
                 {/* Project Header */}
-                <div className="h-16 bg-secondary/90 border-b border-secondary/30 flex items-center justify-center relative flex-shrink-0">
-                  <div className="text-xl opacity-70 group-hover:scale-110 transition-transform duration-300">
+                <div className="h-24 bg-secondary/90 border-b border-secondary/30 flex items-center justify-center relative flex-shrink-0">
+                  <div className="text-3xl opacity-70 group-hover:scale-110 transition-transform duration-300">
                     {project.icon}
                   </div>
-                  <div className={`absolute top-1 right-1 px-1.5 py-0.5 rounded text-xs font-medium border ${getStatusColor(project.status)}`}>
+                  <div className={`absolute top-2 right-2 px-3 py-1.5 rounded text-sm font-medium border ${getStatusColor(project.status)}`}>
                     {getStatusText(project.status)}
                   </div>
-                  <div className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-xs font-medium ${
+                  <div className={`absolute top-2 left-2 px-3 py-1.5 rounded text-sm font-medium ${
                     project.type === "personal" 
                       ? "bg-blue-500/20 text-blue-400 border border-blue-500/40" 
                       : "bg-purple-500/20 text-purple-400 border border-purple-500/40"
@@ -326,41 +326,41 @@ const Portfolio = () => {
                 </div>
 
                 {/* Project Content */}
-                <div className="p-3 flex flex-col flex-grow">
-                  <div className="mb-2">
-                    <h3 className="text-color-text-primary text-sm font-bold group-hover:text-accent transition-colors line-clamp-1">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="mb-4">
+                    <h3 className="text-color-text-primary text-lg font-bold group-hover:text-accent transition-colors line-clamp-2">
                       {t(project.titleKey)}
                     </h3>
                     {(project.year || project.yearKey) && (
-                      <div className="text-color-text-secondary/60 text-xs">
+                      <div className="text-color-text-secondary/60 text-base mt-2">
                         {project.yearKey ? t(project.yearKey) : project.year}
                       </div>
                     )}
                   </div>
 
-                  <p className="text-color-text-secondary/80 mb-2 h-20 leading-relaxed text-xs line-clamp-4">
+                  <p className="text-color-text-secondary/80 mb-4 h-20 leading-relaxed text-base line-clamp-6">
                     {t(project.descriptionKey)}
                   </p>
 
                   {project.teamWork !== undefined && (
-                    <div className="mb-2 pt-3 border-t border-white/3">
-                      <span className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs ${
+                    <div className="mb-2">
+                      <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded text-base ${
                         project.teamWork 
                           ? "bg-green-500/20 text-green-400"
                           : "bg-blue-500/20 text-blue-400"
                       }`}>
                         {project.teamWork ? "👥" : "👤"}
-                        <span className="text-xs">{project.teamWork ? t("portfolio.teamWork.team") : t("portfolio.teamWork.solo")}</span>
+                        <span className="text-base">{project.teamWork ? t("portfolio.teamWork.team") : t("portfolio.teamWork.solo")}</span>
                       </span>
                     </div>
                   )}
 
                   {/* Tech Stack - Limited to 3 main technologies */}
-                  <div className="flex flex-wrap gap-1 mb-3">
+                  <div className="flex flex-wrap gap-2 mb-6">
                     {(expandedTech === project.id ? project.tech : project.tech.slice(0, 3)).map((tech) => (
                       <span
                         key={tech}
-                        className="text-color-text-secondary/90 px-2 py-1 rounded text-xs border border-secondary/80 h-fit"
+                        className="text-color-text-secondary/90 px-3 py-1.5 rounded text-base border border-secondary/80 h-fit"
                       >
                         {tech}
                       </span>
@@ -368,7 +368,7 @@ const Portfolio = () => {
                     {project.tech.length > 3 && expandedTech !== project.id && (
                       <button
                         onClick={() => setExpandedTech(project.id)}
-                        className="text-color-text-secondary/60 hover:text-accent hover:cursor-pointer text-xs px-2 py-1 flex items-center transition-colors h-fit"
+                        className="text-color-text-secondary/60 hover:text-accent hover:cursor-pointer text-base px-3 py-1.5 flex items-center transition-colors h-fit"
                       >
                         +{project.tech.length - 3}
                       </button>
@@ -376,7 +376,7 @@ const Portfolio = () => {
                     {expandedTech === project.id && project.tech.length > 3 && (
                       <button
                         onClick={() => setExpandedTech(null)}
-                        className="text-color-text-secondary/60 hover:text-accent hover:cursor-pointer text-xs px-2 py-1 flex items-center transition-colors h-fit"
+                        className="text-color-text-secondary/60 hover:text-accent hover:cursor-pointer text-base px-3 py-1.5 flex items-center transition-colors h-fit"
                       >
                         ↑ {t("portfolio.collapse")}
                       </button>
@@ -384,24 +384,24 @@ const Portfolio = () => {
                   </div>
 
                   {/* Action Button - Always at bottom */}
-                  <div className="text-xs mt-auto flex-shrink-0">
+                  <div className="text-base mt-auto flex-shrink-0">
                     {project.type === "personal" && project.codeUrl && project.codeUrl !== "#" && (
                       <a
                         href={project.codeUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full block border border-accent text-accent hover:bg-accent hover:text-primary font-semibold py-2 px-3 rounded transition-colors text-center"
+                        className="w-full block border border-accent text-accent hover:bg-accent hover:text-primary font-semibold py-4 px-6 rounded transition-colors text-center"
                       >
                         {t("portfolio.viewCode")}
                       </a>
                     )}
                     {project.type === "personal" && (!project.codeUrl || project.codeUrl === "#") && (
-                      <div className="w-full bg-secondary text-color-text-secondary/60 font-medium py-2 px-3 rounded text-center border border-secondary/40 hover:cursor-not-allowed">
+                      <div className="w-full bg-secondary text-color-text-secondary/60 font-medium py-4 px-6 rounded text-center border border-secondary/40 hover:cursor-not-allowed">
                         💼 {t("portfolio.privateCode")}
                       </div>
                     )}
                     {project.type === "school" && (
-                      <div className="w-full bg-secondary text-color-text-secondary/60 font-medium py-2 px-3 rounded text-center border border-secondary/40 hover:cursor-not-allowed">
+                      <div className="w-full bg-secondary text-color-text-secondary/60 font-medium py-4 px-6 rounded text-center border border-secondary/40 hover:cursor-not-allowed">
                         🎓 {t("portfolio.schoolProject")}
                       </div>
                     )}
@@ -413,38 +413,38 @@ const Portfolio = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-primary border border-white/8 rounded-xl p-6 mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-            <div className="space-y-1">
-              <div className="text-2xl font-bold text-accent">{projects.length}</div>
-              <div className="text-color-text-secondary text-sm">{t("portfolio.stats.total")}</div>
+        <div className="bg-primary border border-white/8 rounded-xl p-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div className="space-y-2">
+              <div className="text-3xl md:text-4xl font-bold text-accent">{projects.length}</div>
+              <div className="text-color-text-secondary text-base">{t("portfolio.stats.total")}</div>
             </div>
-            <div className="space-y-1">
-              <div className="text-2xl font-bold text-accent">
+            <div className="space-y-2">
+              <div className="text-3xl md:text-4xl font-bold text-accent">
                 {projects.filter(p => p.type === "personal").length}
               </div>
-              <div className="text-color-text-secondary text-sm">{t("portfolio.stats.personal")}</div>
+              <div className="text-color-text-secondary text-base">{t("portfolio.stats.personal")}</div>
             </div>
-            <div className="space-y-1">
-              <div className="text-2xl font-bold text-accent">
+            <div className="space-y-2">
+              <div className="text-3xl md:text-4xl font-bold text-accent">
                 {projects.filter(p => p.type === "school").length}
               </div>
-              <div className="text-color-text-secondary text-sm">{t("portfolio.stats.school")}</div>
+              <div className="text-color-text-secondary text-base">{t("portfolio.stats.school")}</div>
             </div>
-            <div className="space-y-1">
-              <div className="text-2xl font-bold text-accent">
+            <div className="space-y-2">
+              <div className="text-3xl md:text-4xl font-bold text-accent">
                 {new Set(projects.flatMap(p => p.tech)).size}
               </div>
-              <div className="text-color-text-secondary text-sm">{t("portfolio.stats.technologies")}</div>
+              <div className="text-color-text-secondary text-base">{t("portfolio.stats.technologies")}</div>
             </div>
           </div>
         </div>
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-accent/20 to-accent/10 border border-accent/30 rounded-full px-8 py-4">
-            <span className="text-2xl">🚀</span>
-            <p className="text-color-text-primary text-lg font-medium">
+          <div className="inline-flex items-center gap-4 bg-gradient-to-r from-accent/20 to-accent/10 border border-accent/30 rounded-full px-10 py-6">
+            <span className="text-3xl">🚀</span>
+            <p className="text-color-text-primary text-xl font-medium">
               {t("portfolio.moreProjects")}
             </p>
           </div>

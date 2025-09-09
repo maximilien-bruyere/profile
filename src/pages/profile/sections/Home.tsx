@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 md:px-8 lg:px-12 min-h-screen flex items-center">
+    <div className="container mx-auto pt-20 md:pt-0 px-4 md:px-8 lg:px-12 min-h-screen flex items-center">
       <div className="w-full max-w-4xl mx-auto text-center lg:text-left">
         <div className="space-y-6 md:space-y-8">
           {/* Greeting */}
