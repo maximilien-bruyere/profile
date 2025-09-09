@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
 
                     {/* Right side - Links and copyright */}
-                    <div className="flex flex-col items-center gap-3 text-xs md:text-sm order-3 md:order-3">
+                    <div className="flex flex-col items-center gap-3 text-sm order-3 md:order-3">
                         <a 
                             href="https://github.com/maximilien-bruyere/profile" 
                             target="_blank" 

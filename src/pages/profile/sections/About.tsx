@@ -38,10 +38,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-color-text-primary mb-4">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-color-text-primary mb-6">
             {t("about.title")}
           </h2>
-          <p className="text-accent text-xl md:text-2xl font-medium">
+          <p className="text-accent text-2xl md:text-3xl lg:text-4xl font-medium">
             {t("about.subtitle")}
           </p>
         </div>

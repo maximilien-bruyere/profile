@@ -239,7 +239,7 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-color-text-primary mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-color-text-primary mb-6">
             {t("portfolio.title")}
           </h2>
           <p className="text-accent text-2xl md:text-3xl lg:text-4xl font-medium mb-12">

@@ -25,16 +25,16 @@ const Home = () => {
           </p>
           
           {/* Main Title */}
-          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl  font-bold">
             <span className="bg-gradient-to-r from-color-text-secondary to-color-text-primary bg-clip-text text-transparent">
               {t("home.title")}
             </span>
-          </h1>
+          </h2>
           
           {/* Subtitle */}
-          <h2 className="text-accent text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+          <p className="text-accent text-2xl md:text-3xl lg:text-4xl font-medium">
             {t("home.subtitle")}
-          </h2>
+          </p>
           
           {/* Description */}
           <p className="text-color-text-secondary/90 text-base sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">

@@ -43,10 +43,10 @@ export default function Contact() {
         
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-color-text-primary mb-6 md:mb-8">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-color-text-primary mb-6">
             {t("contact.title")}
           </h2>
-          <p className="text-accent text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-8 md:mb-12">
+          <p className="text-accent text-2xl md:text-3xl lg:text-4xl font-medium">
             {t("contact.cta")}
           </p>
         </div>
