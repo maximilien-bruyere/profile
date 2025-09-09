@@ -11,11 +11,11 @@ const About = () => {
     "React Bootstrap",
     "React TypeScript",
     "Tailwind CSS",
-    "NextJS",
+    "NestJS",
     "Prisma",
   ];
 
-  const programLang = ["Python", "C", "C#", "Bash", "Powershell"];
+  const programLang = ["Python", "C", "C#", "C++", "Bash", "Powershell"];
 
   const systemAndInfra = ["Git", "GitHub", "Docker", "Kubernetes", "Ansible"];
 
@@ -55,7 +55,7 @@ const About = () => {
             </p>
 
             {/* Education Card */}
-            <div className="bg-secondary/30 p-6 rounded-lg border border-secondary/50">
+            <div className="bg-secondary p-6 rounded-lg border border-secondary/50">
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">🎓</span>
                 <h3 className="text-accent text-lg font-semibold">
@@ -74,7 +74,7 @@ const About = () => {
             </div>
 
             {/* Location Card */}
-            <div className="bg-secondary/30 p-6 rounded-lg border border-secondary/50">
+            <div className="bg-secondary p-6 rounded-lg border border-secondary/50">
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">📍</span>
                 <h3 className="text-accent text-lg font-semibold">
@@ -86,7 +86,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="bg-secondary/30 p-6 rounded-lg border border-secondary/50">
+            <div className="bg-secondary p-6 rounded-lg border border-secondary/50">
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">🏆</span>
                 <h3 className="text-accent text-lg font-semibold">
@@ -104,7 +104,7 @@ const About = () => {
             </div>
 
             {/* Languages Card */}
-            <div className="bg-secondary/30 p-6 rounded-lg border border-secondary/50">
+            <div className="bg-secondary p-6 rounded-lg border border-secondary/50">
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">🗣️</span>
                 <h3 className="text-accent text-lg font-semibold">
@@ -121,7 +121,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="bg-secondary/30 p-6 rounded-lg border border-secondary/50">
+            <div className="bg-secondary p-6 rounded-lg border border-secondary/50">
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">⚡</span>
                 <h3 className="text-accent text-lg font-semibold">
@@ -143,13 +143,13 @@ const About = () => {
 
             <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="text-center">
-                <p className="text-accent text-2xl font-bold">15+</p>
+                <p className="text-accent text-2xl font-bold">30+</p>
                 <p className="text-color-text-secondary/80 text-sm">
                   {t('about.stats.technologies')}
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-accent text-2xl font-bold">2</p>
+                <p className="text-accent text-2xl font-bold">12</p>
                 <p className="text-color-text-secondary/80 text-sm">{t('about.stats.projects')}</p>
               </div>
               <div className="text-center">
@@ -178,7 +178,7 @@ const About = () => {
                   {webTechnologies.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}
@@ -198,7 +198,7 @@ const About = () => {
                   {systemAndInfra.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}
@@ -218,7 +218,7 @@ const About = () => {
                   {programLang.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}
@@ -238,7 +238,7 @@ const About = () => {
                   {databases.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}
@@ -258,7 +258,7 @@ const About = () => {
                   {systemsAndHardware.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}
@@ -278,7 +278,7 @@ const About = () => {
                   {otherSkills.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-primary/50 border border-secondary/40 p-3 rounded-lg text-center hover:bg-secondary/40 transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
                       <span className="text-color-text-secondary font-medium text-sm">
                         {skill}

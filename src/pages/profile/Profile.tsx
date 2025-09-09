@@ -11,7 +11,7 @@ const Profile: React.FC = () => {
       <section 
         id="home" 
         aria-label="Home" 
-        className="min-h-screen bg-secondary/20 md:pt-10"
+        className="min-h-screen bg-secondary md:pt-10"
       >
         <Home />
       </section>
@@ -20,7 +20,7 @@ const Profile: React.FC = () => {
       <section 
         id="about" 
         aria-label="About" 
-        className="py-16 md:py-20 lg:py-24 bg-secondary/10"
+        className="py-16 md:py-20 lg:py-24 bg-primary"
       >
         <About />
       </section>
@@ -29,7 +29,7 @@ const Profile: React.FC = () => {
       <section 
         id="portfolio" 
         aria-label="Portfolio" 
-        className="py-16 md:py-20 lg:py-24 bg-secondary/20"
+        className="py-16 md:py-20 lg:py-24 bg-secondary"
       >
         <Portfolio />
       </section>
@@ -38,7 +38,7 @@ const Profile: React.FC = () => {
       <section 
         id="contact" 
         aria-label="Contact" 
-        className="py-16 md:py-20 lg:py-24 bg-secondary/10"
+        className="py-16 md:py-20 lg:py-24 bg-primary"
       >
         <Contact />
       </section>

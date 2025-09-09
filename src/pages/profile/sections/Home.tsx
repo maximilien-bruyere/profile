@@ -2,7 +2,18 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const downloadCV = () => {
+    const currentLanguage = i18n.language;
+    const cvFileName = currentLanguage === 'fr' ? 'cv_fr.pdf' : 'cv_en.pdf';
+    const cvDisplayName = currentLanguage === 'fr' ? 'CV_Maximilien_Bruyere_FR.pdf' : 'CV_Maximilien_Bruyere_EN.pdf';
+    
+    const link = document.createElement('a');
+    link.href = `./src/assets/cv/${cvFileName}`;
+    link.download = cvDisplayName;
+    link.click();
+  };
 
   return (
     <div className="container mx-auto px-4 md:px-8 lg:px-12 min-h-screen flex items-center">
@@ -30,16 +41,26 @@ const Home = () => {
             {t("home.description")}
           </p>
           
-          {/* CTA Button */}
-          <div className="pt-4 md:pt-8">
+          {/* CTA Buttons */}
+          <div className="pt-4 md:pt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start max-w-lg mx-auto lg:mx-0">
             <Link
               to="portfolio"
               smooth={true}
               duration={500}
-              className="inline-block bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-4 rounded-lg transition-all duration-300 cursor-pointer hover:transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="flex-1 inline-block bg-accent hover:bg-accent/90 text-primary font-semibold px-6 py-4 rounded-lg transition-all duration-300 cursor-pointer hover:transform hover:scale-105 shadow-lg hover:shadow-xl text-center"
             >
               {t("home.cta")}
             </Link>
+            
+            <button
+              onClick={downloadCV}
+              className="hover:cursor-pointer flex-1 bg-secondary/60 border border-white/3 hover:border-accent/50 text-color-text-primary hover:text-accent font-semibold px-6 py-4 rounded-lg transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+            >
+              <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span className="truncate">{t("home.downloadCV")}</span>
+            </button>
           </div>
         </div>
       </div>
