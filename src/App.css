@@ -33,8 +33,30 @@
   --font-sans: "Inter", sans-serif;
   --font-heading: "Montserrat", sans-serif;
   --color-primary: #141414;
-  --color-secondary: #292929;
+  --color-secondary: #1a1a1a;
   --color-color-text-primary: #ffffff;
   --color-color-text-secondary: #c7c7c7;
   --color-accent: #f6c245;
+}
+
+/* Utility classes for text truncation */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
