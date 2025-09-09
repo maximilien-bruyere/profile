@@ -14,7 +14,8 @@
     "title": "Maximilien",
     "subtitle": "IT Student",
     "description": "I am passionate about infrastructure, networks and systems.",
-    "cta": "View My Work"
+    "cta": "View My Work",
+    "downloadCV": "Download my CV"
   },
   "about": {
     "title": "About Me",
@@ -65,22 +66,115 @@
     "subtitle": "Projects in Development",
     "viewProject": "View Project",
     "viewCode": "View Code",
-    "inDevelopment": "In development"
+    "inDevelopment": "In development",
+    "allProjects": "All Projects",
+    "schoolProject": "School project - Code not available",
+    "privateCode": "Personal project - Private code",
+    "moreProjects": "More exciting projects coming during my studies!",
+    "selectCategory": "Choose a category",
+    "selectType": "Choose a type",
+    "collapse": "Collapse",
+    "categories": {
+      "all": "All projects",
+      "web": "Web",
+      "infrastructure": "Infrastructure",
+      "security": "Security",
+      "hardware": "Hardware",
+      "gaming": "Gaming"
+    },
+    "filters": {
+      "all": "All",
+      "personal": "Personal Projects",
+      "school": "School Projects"
+    },
+    "types": {
+      "personal": "Personal",
+      "school": "School"
+    },
+    "status": {
+      "completed": "Completed",
+      "inDevelopment": "In development",
+      "ongoing": "Ongoing",
+      "unknown": "Unknown status"
+    },
+    "stats": {
+      "total": "Total Projects",
+      "personal": "Personal Projects",
+      "school": "School Projects",
+      "technologies": "Technologies"
+    },
+    "teamWork": {
+      "team": "Team",
+      "solo": "Solo"
+    },
+    "projects": {
+      "portfolio": {
+        "title": "Portfolio/CV",
+        "description": "Responsive personal website showcasing my CV and projects with multilingual support"
+      },
+      "quizapp": {
+        "title": "QuizApp",
+        "description": "Interactive quiz application with scoring system and authentication"
+      },
+      "homelab": {
+        "title": "Homelab Infrastructure",
+        "description": "Personal infrastructure with Raspberry Pi, monitoring and network services"
+      },
+      "interdisciplinary": {
+        "title": "Interdisciplinary Project",
+        "description": "Website deployment with complete infrastructure: Alcatel network, Linux & Windows servers, MariaDB database and PHP website"
+      },
+      "ecommerce": {
+        "title": "React E-commerce Site",
+        "description": "E-commerce website developed in React with Bootstrap"
+      },
+      "autonomousCar": {
+        "title": "Autonomous Car Project",
+        "description": "Creation of an autonomous car with sensors, object-oriented programming in Python and electronics"
+      },
+      "linuxProject": {
+        "title": "Linux Project",
+        "description": "Linux server configuration with web, mail, FTP services and security implementation"
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Installation and configuration of secure network infrastructure with Cisco and Fortinet equipment"
+      },
+      "interactiveCV": {
+        "title": "Interactive JavaScript CV",
+        "description": "Development of an interactive CV using JavaScript, jQuery and CSS for animations"
+      },
+      "hackathon": {
+        "title": "Hackathon Project",
+        "description": "Creation of a video game in Python with Pygame during a student hackathon"
+      },
+      "htmlWebsite": {
+        "title": "HTML/CSS Website",
+        "description": "First website developed in pure HTML and CSS, learning the basics of web development"
+      },
+      "cableTester": {
+        "title": "Network Cable Tester",
+        "description": "Design and creation of a network cable tester with electronic components and C++ programming"
+      },
+      "years": {
+        "first": "1st year",
+        "second": "2nd year",
+        "secondThird": "2nd/3rd year"
+      }
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Let's Work Together",
-    "description": "Feel free to contact me to discuss projects or collaboration opportunities",
+    "cta": "Let's work together!",
     "info": {
-      "title": "Contact Information",
       "email": "Email",
       "location": "Location",
       "education": "Education",
       "languages": "Languages"
     },
     "buttons": {
-      "github": "View my GitHub",
-      "linkedin": "View my LinkedIn"
+      "cv": "Download CV",
+      "email": "Send me an email"
     }
   }
 }

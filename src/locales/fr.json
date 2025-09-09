@@ -14,7 +14,8 @@
     "title": "Maximilien",
     "subtitle": "Étudiant en Informatique",
     "description": "Je suis passionné par l'infrastructure, les réseaux ainsi que par les systèmes.",
-    "cta": "Voir mes projets"
+    "cta": "Voir mes projets",
+    "downloadCV": "Télécharger mon CV"
   },
   "about": {
     "title": "Informations Générales",
@@ -51,7 +52,7 @@
     },
     "interests": {
       "title": "Passions & Intérêts",
-      "interest_1": "Infrastructures Programmables",
+      "interest_1": "Infrastructures programmables",
       "interest_2": "Réseaux et télécommunications",
       "interest_3": "Open-source"
     },
@@ -63,25 +64,116 @@
   },
   "portfolio": {
     "title": "Mes Projets",
-    "subtitle": "Projets en Développement",
+    "subtitle": "Projets personnels et académiques",
     "viewProject": "Voir le Projet",
     "viewCode": "Voir le Code",
-    "inDevelopment": "En développement"
+    "inDevelopment": "En développement",
+    "allProjects": "Tous les Projets",
+    "schoolProject": "Projet d'école - Code privé",
+    "privateCode": "Projet personnel - Code privé",
+    "moreProjects": "Plus de projets à venir !",
+    "collapse": "Réduire",
+    "categories": {
+      "all": "Choisir une catégorie",
+      "web": "Web",
+      "infrastructure": "Infrastructure",
+      "security": "Sécurité",
+      "hardware": "Hardware",
+      "gaming": "Gaming"
+    },
+    "filters": {
+      "all": "Choisir un type",
+      "personal": "Projets Personnels",
+      "school": "Projets d'École"
+    },
+    "types": {
+      "personal": "Personnel",
+      "school": "École"
+    },
+    "status": {
+      "completed": "Terminé",
+      "inDevelopment": "En développement",
+      "ongoing": "En cours",
+      "unknown": "Statut inconnu"
+    },
+    "stats": {
+      "total": "Projets Totaux",
+      "personal": "Projets Personnels",
+      "school": "Projets d'École",
+      "technologies": "Technologies"
+    },
+    "teamWork": {
+      "team": "Équipe",
+      "solo": "Solo"
+    },
+    "projects": {
+      "portfolio": {
+        "title": "Portfolio/CV",
+        "description": "Site web personnel responsive présentant mon CV et mes projets avec support multilingue"
+      },
+      "quizapp": {
+        "title": "QuizApp",
+        "description": "Application de quiz interactive avec système de scores et authentification"
+      },
+      "homelab": {
+        "title": "Infrastructure Homelab",
+        "description": "Infrastructure personnelle avec Raspberry Pi, monitoring et services réseau"
+      },
+      "interdisciplinary": {
+        "title": "Projet Interdisciplinaire",
+        "description": "Déploiement d'un site web avec infrastructure complète : réseau Alcatel, serveurs Linux & Windows, base de données MariaDB et site web en PHP"
+      },
+      "ecommerce": {
+        "title": "Site E-commerce React",
+        "description": "Site web d'e-commerce développé en React avec Bootstrap"
+      },
+      "autonomousCar": {
+        "title": "Projet Voiture Autonome",
+        "description": "Création d'une voiture autonome avec capteurs, programmation orientée objet en Python et de l'électronique"
+      },
+      "linuxProject": {
+        "title": "Projet Linux",
+        "description": "Configuration d'un serveur Linux avec services web, mail, FTP et mise en place de sécurité"
+      },
+      "cybersecurity": {
+        "title": "Cybersécurité",
+        "description": "Installation et configuration d'une infrastructure réseau sécurisée avec équipements Cisco et Fortinet"
+      },
+      "interactiveCV": {
+        "title": "CV Interactif JavaScript",
+        "description": "Développement d'un CV interactif utilisant JavaScript, jQuery et CSS pour les animations"
+      },
+      "hackathon": {
+        "title": "Projet Hackathon",
+        "description": "Création d'un jeu vidéo en Python avec Pygame lors d'un hackathon étudiant"
+      },
+      "htmlWebsite": {
+        "title": "Site Web HTML/CSS",
+        "description": "Premier site web développé en HTML et CSS pur, apprentissage des bases du développement web"
+      },
+      "cableTester": {
+        "title": "Testeur de Câble Réseau",
+        "description": "Conception et réalisation d'un testeur de câble réseau avec composants électroniques et programmation en C++"
+      },
+      "years": {
+        "first": "1ère année",
+        "second": "2ème année",
+        "secondThird": "2ème/3ème année"
+      }
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Travaillons ensemble",
-    "description": "N'hésitez pas à me contacter pour discuter de projets ou d'opportunités de collaboration",
+    "cta": "Travaillons ensemble !",
     "info": {
-      "title": "Informations de Contact",
       "email": "Email",
       "location": "Localisation",
-      "education": "Études",
+      "education": "Formation",
       "languages": "Langues"
     },
     "buttons": {
-      "github": "Voir mon GitHub",
-      "linkedin": "Voir mon LinkedIn"
+      "cv": "Télécharger CV",
+      "email": "M'envoyer un email"
     }
   }
 }
