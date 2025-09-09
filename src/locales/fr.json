@@ -13,7 +13,7 @@
     "greeting": "Bonjour, je m'appelle",
     "title": "Maximilien",
     "subtitle": "Étudiant en Informatique",
-    "description": "Je suis passionné par l'infrastructure, les réseaux ainsi que par les systèmes.",
+    "description": "Infrastructure, réseaux, systèmes : ma passion, votre fiabilité.",
     "cta": "Voir mes projets",
     "downloadCV": "Télécharger mon CV"
   },
@@ -109,51 +109,51 @@
     "projects": {
       "portfolio": {
         "title": "Portfolio/CV",
-        "description": "Site web personnel responsive présentant mon CV et mes projets avec support multilingue"
+        "description": "Portfolio en ligne : CV et projets présentés dans un site responsive, accessible en plusieurs langues."
       },
       "quizapp": {
         "title": "QuizApp",
-        "description": "Application de quiz interactive avec système de scores et authentification"
+        "description": "Application de quiz dynamique, avec suivi des scores et connexion personnalisée."
       },
       "homelab": {
         "title": "Infrastructure Homelab",
-        "description": "Infrastructure personnelle avec Raspberry Pi, monitoring et services réseau"
+        "description": "Mise en place d’une infrastructure auto-hébergée : Raspberry Pi, monitoring, services réseau et conteneurs."
       },
       "interdisciplinary": {
         "title": "Projet Interdisciplinaire",
-        "description": "Déploiement d'un site web avec infrastructure complète : réseau Alcatel, serveurs Linux & Windows, base de données MariaDB et site web en PHP"
+        "description": "Mise en place d’une infrastructure réseau et serveurs (Alcatel, Linux, Windows) pour l’hébergement d’un site web PHP avec base MariaDB."
       },
       "ecommerce": {
         "title": "Site E-commerce React",
-        "description": "Site web d'e-commerce développé en React avec Bootstrap"
+        "description": "Site web d’e-commerce moderne réalisé avec React et Bootstrap."
       },
       "autonomousCar": {
         "title": "Projet Voiture Autonome",
-        "description": "Création d'une voiture autonome avec capteurs, programmation orientée objet en Python et de l'électronique"
+        "description": "Développement d’un prototype de voiture autonome : capteurs, électronique embarquée et Python orienté objet."
       },
       "linuxProject": {
         "title": "Projet Linux",
-        "description": "Configuration d'un serveur Linux avec services web, mail, FTP et mise en place de sécurité"
+        "description": "Mise en place d’un serveur Linux intégrant services web, messagerie, FTP et sécurité renforcée."
       },
       "cybersecurity": {
         "title": "Cybersécurité",
-        "description": "Installation et configuration d'une infrastructure réseau sécurisée avec équipements Cisco et Fortinet"
+        "description": "Déploiement d’une infrastructure réseau complète et sécurisée avec Cisco et Fortinet."
       },
       "interactiveCV": {
         "title": "CV Interactif JavaScript",
-        "description": "Développement d'un CV interactif utilisant JavaScript, jQuery et CSS pour les animations"
+        "description": "Développement d’un CV interactif avec animations en JavaScript, jQuery et CSS."
       },
       "hackathon": {
         "title": "Projet Hackathon",
-        "description": "Création d'un jeu vidéo en Python avec Pygame lors d'un hackathon étudiant"
+        "description": "Création d’un jeu vidéo en Python avec Pygame."
       },
       "htmlWebsite": {
         "title": "Site Web HTML/CSS",
-        "description": "Premier site web développé en HTML et CSS pur, apprentissage des bases du développement web"
+        "description": "Création d’un site web statique en HTML/CSS pour découvrir les fondamentaux du web."
       },
       "cableTester": {
         "title": "Testeur de Câble Réseau",
-        "description": "Conception et réalisation d'un testeur de câble réseau avec composants électroniques et programmation en C++"
+        "description": "Réalisation d’un testeur de câbles réseau avec des composants électroniques et du code en C++."
       },
       "years": {
         "first": "1ère année",
@@ -175,5 +175,12 @@
       "cv": "Télécharger CV",
       "email": "M'envoyer un email"
     }
+  },
+  "footer": {
+    "madeWith": "Fait avec",
+    "by": "par",
+    "allRights": "Tous droits réservés",
+    "openSource": "Ce projet est open-source",
+    "viewCode": "Voir le code"
   }
 }

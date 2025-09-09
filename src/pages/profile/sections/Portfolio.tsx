@@ -337,13 +337,13 @@ const Portfolio = () => {
                       </div>
                     )}
                   </div>
-                  
-                  <p className="text-color-text-secondary/80 mb-2 leading-relaxed text-xs line-clamp-4">
+
+                  <p className="text-color-text-secondary/80 mb-2 h-20 leading-relaxed text-xs line-clamp-4">
                     {t(project.descriptionKey)}
                   </p>
 
                   {project.teamWork !== undefined && (
-                    <div className="mb-2">
+                    <div className="mb-2 pt-3 border-t border-white/3">
                       <span className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs ${
                         project.teamWork 
                           ? "bg-green-500/20 text-green-400"

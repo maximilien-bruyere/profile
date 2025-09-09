@@ -13,7 +13,7 @@
     "greeting": "Hello, I'm",
     "title": "Maximilien",
     "subtitle": "IT Student",
-    "description": "I am passionate about infrastructure, networks and systems.",
+    "description": "Infrastructure, networks, systems: my passion, your reliability.",
     "cta": "View My Work",
     "downloadCV": "Download my CV"
   },
@@ -68,9 +68,9 @@
     "viewCode": "View Code",
     "inDevelopment": "In development",
     "allProjects": "All Projects",
-    "schoolProject": "School project - Code not available",
+    "schoolProject": "School project - Private code",
     "privateCode": "Personal project - Private code",
-    "moreProjects": "More exciting projects coming during my studies!",
+    "moreProjects": "More projects coming soon !",
     "selectCategory": "Choose a category",
     "selectType": "Choose a type",
     "collapse": "Collapse",
@@ -110,51 +110,51 @@
     "projects": {
       "portfolio": {
         "title": "Portfolio/CV",
-        "description": "Responsive personal website showcasing my CV and projects with multilingual support"
+        "description": "Online portfolio: CV and projects presented on a responsive website, accessible in several languages."
       },
       "quizapp": {
         "title": "QuizApp",
-        "description": "Interactive quiz application with scoring system and authentication"
+        "description": "Dynamic quiz application, with score tracking and personalised login."
       },
       "homelab": {
         "title": "Homelab Infrastructure",
-        "description": "Personal infrastructure with Raspberry Pi, monitoring and network services"
+        "description": "Implementation of a self-hosted infrastructure: Raspberry Pi, monitoring, network services, and containers."
       },
       "interdisciplinary": {
         "title": "Interdisciplinary Project",
-        "description": "Website deployment with complete infrastructure: Alcatel network, Linux & Windows servers, MariaDB database and PHP website"
+        "description": "Implementation of network and server infrastructure (Alcatel, Linux, Windows) for hosting a PHP website with MariaDB database."
       },
       "ecommerce": {
         "title": "React E-commerce Site",
-        "description": "E-commerce website developed in React with Bootstrap"
+        "description": "Modern e-commerce website built with React and Bootstrap."
       },
       "autonomousCar": {
         "title": "Autonomous Car Project",
-        "description": "Creation of an autonomous car with sensors, object-oriented programming in Python and electronics"
+        "description": "Development of an autonomous car prototype: sensors, on-board electronics and object-oriented Python."
       },
       "linuxProject": {
         "title": "Linux Project",
-        "description": "Linux server configuration with web, mail, FTP services and security implementation"
+        "description": "Implementation of a Linux server integrating web services, email, FTP and enhanced security."
       },
       "cybersecurity": {
         "title": "Cybersecurity",
-        "description": "Installation and configuration of secure network infrastructure with Cisco and Fortinet equipment"
+        "description": "Deployment of a comprehensive and secure network infrastructure with Cisco and Fortinet."
       },
       "interactiveCV": {
         "title": "Interactive JavaScript CV",
-        "description": "Development of an interactive CV using JavaScript, jQuery and CSS for animations"
+        "description": "Development of an interactive CV with animations in JavaScript, jQuery, and CSS."
       },
       "hackathon": {
         "title": "Hackathon Project",
-        "description": "Creation of a video game in Python with Pygame during a student hackathon"
+        "description": "Creating a video game in Python with Pygame."
       },
       "htmlWebsite": {
         "title": "HTML/CSS Website",
-        "description": "First website developed in pure HTML and CSS, learning the basics of web development"
+        "description": "Creating a static website in HTML/CSS to learn the fundamentals of the web."
       },
       "cableTester": {
         "title": "Network Cable Tester",
-        "description": "Design and creation of a network cable tester with electronic components and C++ programming"
+        "description": "Development of a network cable tester using electronic components and C++ code."
       },
       "years": {
         "first": "1st year",
@@ -176,5 +176,12 @@
       "cv": "Download CV",
       "email": "Send me an email"
     }
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by",
+    "allRights": "All rights reserved",
+    "openSource": "This project is open-source",
+    "viewCode": "View code"
   }
 }
