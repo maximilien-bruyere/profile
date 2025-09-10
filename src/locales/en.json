@@ -122,7 +122,7 @@
       },
       "interdisciplinary": {
         "title": "Interdisciplinary Project",
-        "description": "Implementation of network and server infrastructure (Alcatel, Linux, Windows) for hosting a PHP website with MariaDB database."
+        "description": "Implementation of network and server infrastructure for hosting a PHP website with MariaDB database."
       },
       "ecommerce": {
         "title": "React E-commerce Site",

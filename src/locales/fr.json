@@ -121,7 +121,7 @@
       },
       "interdisciplinary": {
         "title": "Projet Interdisciplinaire",
-        "description": "Mise en place d’une infrastructure réseau et serveurs (Alcatel, Linux, Windows) pour l’hébergement d’un site web PHP avec base MariaDB."
+        "description": "Mise en place d’une infrastructure réseau et serveurs pour l’hébergement d’un site web PHP avec base MariaDB."
       },
       "ecommerce": {
         "title": "Site E-commerce React",
