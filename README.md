@@ -7,7 +7,7 @@
 
 ## 📋 À propos
 
-Portfolio personnel interactif développé avec React et TypeScript, présentant mes compétences, projets et expériences en tant qu'étudiant en informatique et réseaux.
+Portfolio personnel interactif développé avec React et TypeScript, présentant mes compétences, projets et expériences en tant qu'étudiant en informatique.
 
 🔗 **[Voir le portfolio en ligne](https://maximilien-bruyere.github.io/profile/)**
 
@@ -35,44 +35,6 @@ Portfolio personnel interactif développé avec React et TypeScript, présentant
 - **ESLint** - Linter pour la qualité du code
 - **GitHub Pages** - Déploiement automatique
 
-## 🚀 Installation et utilisation
-
-### Prérequis
-- Node.js (version 18 ou supérieure)
-- npm ou yarn
-
-### Installation
-```bash
-# Cloner le repository
-git clone https://github.com/maximilien-bruyere/profile.git
-
-# Aller dans le dossier
-cd profile
-
-# Installer les dépendances
-npm install
-```
-
-### Développement
-```bash
-# Lancer le serveur de développement
-npm run dev
-
-# Le site sera accessible sur http://localhost:5173
-```
-
-### Build et déploiement
-```bash
-# Créer une version de production
-npm run build
-
-# Prévisualiser la version de production
-npm run preview
-
-# Déployer sur GitHub Pages
-npm run deploy
-```
-
 ## 📁 Structure du projet
 
 ```
@@ -93,31 +55,15 @@ src/
 1. **🏠 Accueil** - Présentation et appel à l'action
 2. **👨‍💻 À propos** - Compétences, formation et expériences
 3. **💼 Portfolio** - Projets personnels et académiques
-4. **📞 Contact** - Informations de contact et liens sociaux
+4. **📞 Contact** - Informations de contact et réseaux sociaux
 
-## 🌍 Internationalisation
+## 🌍 Langues disponibles
 
 Le portfolio est disponible en :
-- 🇫🇷 Français
-- 🇬🇧 Anglais
+- Français
+- Anglais
 
 La langue est automatiquement détectée et peut être changée via le sélecteur dans la navigation.
-
-## 🎯 Compétences mises en avant
-
-### Technologies Web
-- HTML5, CSS3, JavaScript, TypeScript
-- React, Tailwind CSS, Bootstrap
-- PHP, NestJS, Prisma
-
-### Systèmes & Infrastructure
-- Windows, Linux (RedHat, Debian)
-- Docker, Kubernetes, Ansible
-- Cisco, Fortinet
-
-### Outils de développement
-- Git, GitHub, Docker
-- VS Code, IntelliJ
 
 ## 📱 Responsive Design
 
@@ -126,22 +72,6 @@ Le portfolio est entièrement responsive et optimisé pour :
 - 📱 Tablette (768px+)
 - 💻 Desktop (1024px+)
 - 🖥️ Large screens (1440px+)
-
-## 🔧 Configuration
-
-### Variables d'environnement
-Le projet utilise la configuration Vite par défaut. Pour personnaliser :
-
-```typescript
-// vite.config.ts
-export default defineConfig({
-  base: "/profile", // Chemin de base pour GitHub Pages
-  plugins: [react(), tailwindcss()],
-});
-```
-
-### Personnalisation des couleurs
-Les couleurs sont définies dans `tailwind.config.js` et peuvent être facilement modifiées.
 
 ## 📄 Licence
 
