@@ -6,7 +6,7 @@ import Contact from "./sections/Contact";
 
 const Profile: React.FC = () => {
   return (
-    <main className="min-h-screen scroll-smooth ">
+    <main className="min-h-screen">
       {/* Hero / Home - Full viewport height */}
       <section 
         id="home" 

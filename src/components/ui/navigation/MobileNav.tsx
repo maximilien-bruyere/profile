@@ -42,6 +42,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
             to="home"
             onClick={close}
             smooth={true}
+            offset={-70}
             duration={500}
             className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90 transition-colors duration-200 hover:cursor-pointer"
           >
@@ -51,6 +52,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
             to="about"
             onClick={close}
             smooth={true}
+            offset={-70}
             duration={500}
             className="w-18 hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
           >
@@ -60,6 +62,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
             to="portfolio"
             onClick={close}
             smooth={true}
+            offset={-70}
             duration={500}
             className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
           >
@@ -69,6 +72,7 @@ const MobileNav = ({ isOpen, close }: Props) => {
             to="contact"
             onClick={close}
             smooth={true}
+            offset={-70}
             duration={500}
             className="w-min hover:text-color-text-primary/80 active:text-color-text-secondary/90  transition-colors duration-200 hover:cursor-pointer"
           >
