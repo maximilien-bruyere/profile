@@ -17,9 +17,11 @@ const About = () => {
 
   const programLang = ["Python", "C", "C#", "C++", "Bash", "Powershell"];
 
-  const systemAndInfra = ["Git", "GitHub", "Docker", "Kubernetes", "Ansible"];
+  const systemAndInfra = ["Docker", "Kubernetes", "Ansible"];
 
-  const databases = ["MariaDB", "MySQL"];
+  const teamWork = ["Git", "Github"];
+
+  const databases = ["MariaDB", "MySQL", "SQLite"];
 
   const systemsAndHardware = [
     "Windows",
@@ -208,7 +210,27 @@ const About = () => {
                 </div>
               </div>
 
-              {/* Infrastructure & DevOps */}
+              {/* TeamWork */}
+              <div>
+                <h4 className="text-accent text-xl font-semibold mb-4 flex items-center">
+                  <span className="mr-3">🤝</span>
+                  {t("about.categories.teamwork")}
+                </h4>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {teamWork.map((skill) => (
+                    <div
+                      key={skill}
+                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                    >
+                      <span className="text-color-text-secondary font-medium text-sm">
+                        {skill}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Programming */}
               <div>
                 <h4 className="text-accent text-xl font-semibold mb-4 flex items-center">
                   <span className="mr-3">🔧</span>

@@ -10,7 +10,7 @@ const Home = () => {
     const cvDisplayName = currentLanguage === 'fr' ? 'CV_Maximilien_Bruyere_FR.pdf' : 'CV_Maximilien_Bruyere_EN.pdf';
     
     const link = document.createElement('a');
-    link.href = `/profile/cv/${cvFileName}`;
+    link.href = `./src/assets/cv/${cvFileName}`;
     link.download = cvDisplayName;
     link.click();
   };

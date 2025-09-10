@@ -45,7 +45,8 @@
     "categories": {
       "web": "Web Technologies",
       "infrastructure": "Infrastructure & DevOps",
-      "databases": "Databases", 
+      "teamwork": "Teamwork",
+      "databases": "Databases",
       "systems": "Systems & Hardware",
       "other": "Other"
     },
