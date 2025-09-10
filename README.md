@@ -39,7 +39,7 @@ Portfolio personnel interactif développé avec React et TypeScript, présentant
 
 ```
 src/
-├── components/           # Composants réutilisables
+├── components/          # Composants réutilisables
 │   ├── layout/          # Header, Footer
 │   └── ui/              # Navigation, Hamburger
 ├── pages/profile/       # Pages principales
