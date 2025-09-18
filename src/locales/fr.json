@@ -20,12 +20,12 @@
   "about": {
     "title": "Informations Générales",
     "subtitle": "Étudiant en Informatique",
-    "description": "Je suis étudiant en 3e année d'informatique orientation réseaux & télécommunications en option sécurité à la Haute École en Hainaut à Mons, Belgique. Je suis passionné par les infrastructures programmables, les réseaux ainsi que les systèmes UNIX.",
+    "description": "Je suis un étudiant de 21 ans en 3e année d'informatique orientation réseaux & télécommunications en option sécurité à la Haute École en Hainaut à Mons, Belgique. Je suis passionné par les infrastructures programmables, les réseaux ainsi que les systèmes UNIX.",
     "skills": "Mes Compétences",
     "education": {
       "title": "Formation",
       "school": "Haute École en Hainaut",
-      "degree": "Informatique (sécurité)",
+      "degree": "Bachelier en Informatique (sécurité)",
       "year": "3e année"
     },
     "location": {
@@ -40,20 +40,20 @@
     "languages": {
       "title": "Langues",
       "french": "Français (natif)",
-      "english": "Anglais (intermédiaire)"
+      "english": "Anglais (B1)"
     },
     "categories": {
       "web": "Technologies Web",
       "infrastructure": "Infrastructure & DevOps", 
       "programming": "Programmation",
-      "teamwork": "Travail en Équipe",
+      "teamwork": "Travail d'équipe",
       "databases": "Bases de Données",
       "systems": "Systèmes & Hardware",
       "other": "Autres"
     },
     "interests": {
       "title": "Passions & Intérêts",
-      "interest_1": "Infrastructures programmables",
+      "interest_1": "Création d'infrastructures",
       "interest_2": "Réseaux et télécommunications",
       "interest_3": "Open-source"
     },
@@ -176,6 +176,12 @@
       "cv": "Télécharger CV",
       "email": "M'envoyer un email"
     }
+  },
+  "levels": {
+    "veryGood": "Très bon",
+    "good": "Bon",
+    "acceptable": "Acceptable",
+    "passable": "Passable"
   },
   "footer": {
     "madeWith": "Fait avec",

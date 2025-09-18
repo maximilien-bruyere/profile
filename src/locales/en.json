@@ -20,12 +20,12 @@
   "about": {
     "title": "About Me",
     "subtitle": "Computer Science Student",
-    "description": "I am a third-year student studying computer science with a focus on networks and telecommunications, specialising in security, at the Haute École en Hainaut at Mons, Belgium. I am passionate about programmable infrastructure, networks and UNIX systems.",
+    "description": "I am a 21-year-old student in my third year of computer science, specializing in networks and telecommunications with an option in security at the Haute École en Hainaut in Mons, Belgium. I am passionate about programmable infrastructure, networks, and UNIX systems.",
     "skills": "My Skills",
     "education": {
       "title": "Education",
       "school": "Haute École en Hainaut",
-      "degree": "Computer Security",
+      "degree": "Bachelor's degree in computer science (security)",
       "year": "3rd year"
     },
     "location": {
@@ -40,7 +40,7 @@
     "languages": {
       "title": "Languages",
       "french": "French (native)",
-      "english": "English (intermediate)"
+      "english": "English (B1)"
     },
     "categories": {
       "web": "Web Technologies",
@@ -52,7 +52,7 @@
     },
       "interests": {
       "title": "Passions & Interests",
-      "interest_1": "Programmable Infrastructure",
+      "interest_1": "Creation of infrastructures",
       "interest_2": "Networks and telecommunications",
       "interest_3": "Open-source"
     },
@@ -177,6 +177,12 @@
       "cv": "Download CV",
       "email": "Send me an email"
     }
+  },
+  "levels": {
+    "veryGood": "Very good",
+    "good": "Good",
+    "acceptable": "Acceptable",
+    "passable": "Adequate"
   },
   "footer": {
     "madeWith": "Made with",
