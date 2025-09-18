@@ -3,37 +3,132 @@ import { useTranslation } from "react-i18next";
 const About = () => {
   const { t } = useTranslation();
 
-  const webTechnologies = [
-    "HTML5",
-    "CSS3",
-    "PHP",
-    "JavaScript",
-    "React Bootstrap",
-    "React TypeScript",
-    "Tailwind CSS",
-    "NestJS",
-    "Prisma",
-  ];
+  const languages = {
+    webTechnologies: {
+      HTML5: {
+        level: t("levels.veryGood"),
+      },
+      CSS3: {
+        level: t("levels.good"),
+      },
+      PHP: {
+        level: t("levels.acceptable"),
+      },
+      JavaScript: {
+        level: t("levels.acceptable"),
+      },
+      "React Bootstrap": {
+        level: t("levels.acceptable"),
+      },
+      "React TypeScript": {
+        level: t("levels.good"),
+      },
+      "Tailwind CSS": {
+        level: t("levels.good"),
+      },
+      NestJS: {
+        level: t("levels.passable"),
+      },
+      Prisma: {
+        level: t("levels.passable"),
+      },
+    },
+    programLang: {
+      Python: {
+        level: t("levels.good"),
+      },
+      C: {
+        level: t("levels.acceptable"),
+      },
+    },
+    systemAndInfra: {
+      Docker: {
+        level: t("levels.good"),
+      },
+      Kubernetes: {
+        level: t("levels.passable"),
+      },
+      Ansible: {
+        level: t("levels.passable"),
+      },
+    },
+    teamWork: {
+      Git: {
+        level: t("levels.veryGood"),
+      },
+      Github: {
+        level: t("levels.veryGood"),
+      },
+    },
+    databases: {
+      MariaDB: {
+        level: t("levels.acceptable"),
+      },
+      MySQL: {
+        level: t("levels.acceptable"),
+      },
+      SQLite: {
+        level: t("levels.passable"),
+      },
+    },
+    systemsAndHardware: {
+      Windows: {
+        level: t("levels.good"),
+      },
+      "Windows Server": {
+        level: t("levels.acceptable"),
+      },
+      Cisco: {
+        level: t("levels.veryGood"),
+      },
+      Fortinet: {
+        level: t("levels.good"),
+      },
+      "Linux - RedHat": {
+        level: t("levels.veryGood"),
+      },
+      "Linux - Debian": {
+        level: t("levels.veryGood"),
+      },
+      "RaspberryPi OS": {
+        level: t("levels.veryGood"),
+      },
+      Bash: {
+        level: t("levels.veryGood"),
+      },
+      Powershell: {
+        level: t("levels.acceptable"),
+      },
+    },
+    otherSkills: {
+      Markdown: {
+        level: t("levels.veryGood"),
+      },
+      LaTeX: {
+        level: t("levels.good"),
+      },
+    },
+  };
 
-  const programLang = ["Python", "C", "C#", "C++", "Bash", "Powershell"];
+  const getLevelColor = (level: string) => {
+    const veryGood = t("levels.veryGood");
+    const good = t("levels.good");
+    const acceptable = t("levels.acceptable");
+    const passable = t("levels.passable");
 
-  const systemAndInfra = ["Docker", "Kubernetes", "Ansible"];
-
-  const teamWork = ["Git", "Github"];
-
-  const databases = ["MariaDB", "MySQL", "SQLite"];
-
-  const systemsAndHardware = [
-    "Windows",
-    "Windows Server",
-    "Cisco",
-    "Fortinet",
-    "Linux - RedHat",
-    "Linux - Debian",
-    "RaspberryPi OS",
-  ];
-
-  const otherSkills = ["Markdown", "LaTeX"];
+    switch (level) {
+      case veryGood:
+        return "text-lime-400";
+      case good:
+        return "text-emerald-400";
+      case acceptable:
+        return "text-cyan-400";
+      case passable:
+        return "text-blue-400";
+      default:
+        return "text-accent";
+    }
+  };
 
   return (
     <div className="container mx-auto px-4 md:px-8 lg:px-12">
@@ -64,11 +159,17 @@ const About = () => {
                   {t("about.education.title")}
                 </h3>
               </div>
-              <p className="text-color-text-primary font-bold text-lg">
+              <p className="text-color-text-primary font-bold">
                 {t("about.education.degree")}
               </p>
-              <p className="text-color-text-secondary/80">
-                {t("about.education.school")}
+              <p className="text-color-text-secondary/80 hover:underline hover:underline-offset-3 active:text-accent transition-colors duration-300">
+                <a
+                  href="https://www.heh.be/bachelier-informatique"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("about.education.school")}
+                </a>
               </p>
               <p className="text-accent font-medium">
                 {t("about.education.year")}
@@ -92,15 +193,19 @@ const About = () => {
               <div className="flex items-center mb-3">
                 <span className="text-accent text-2xl mr-3">🏆</span>
                 <h3 className="text-accent text-lg font-semibold">
-                  {t('about.certifications.title')}
+                  {t("about.certifications.title")}
                 </h3>
               </div>
               <div className="space-y-2">
-                <p className="text-color-text-primary">
-                  {t('about.certifications.first')}
+                <p className="text-color-text-primary hover:underline hover:underline-offset-3 active:text-color-text-secondary transition-colors duration-300">
+                  <a href="https://www.credly.com/earner/earned/badge/650c28c5-dde9-44c0-99d8-9307c694d206" target="_blank" rel="noopener noreferrer">
+                    {t("about.certifications.first")}
+                  </a>
                 </p>
-                <p className="text-color-text-primary">
-                  {t('about.certifications.second')}
+                <p className="text-color-text-primary hover:underline hover:underline-offset-3 active:text-color-text-secondary transition-colors duration-300">
+                  <a href="https://www.credly.com/earner/earned/badge/ef4cc47c-4a19-4522-936d-aa3aa20aea0a" target="_blank" rel="noopener noreferrer">
+                    {t("about.certifications.second")}
+                  </a>
                 </p>
               </div>
             </div>
@@ -131,15 +236,9 @@ const About = () => {
                 </h3>
               </div>
               <div className="space-y-2 text-color-text-primary">
-                <p>
-                  {t("about.interests.interest_1")}
-                </p>
-                <p>
-                  {t("about.interests.interest_2")}
-                </p>
-                <p>
-                  {t("about.interests.interest_3")}
-                </p>
+                <p>{t("about.interests.interest_1")}</p>
+                <p>{t("about.interests.interest_2")}</p>
+                <p>{t("about.interests.interest_3")}</p>
               </div>
             </div>
 
@@ -147,17 +246,19 @@ const About = () => {
               <div className="text-center">
                 <p className="text-accent text-2xl font-bold">30+</p>
                 <p className="text-color-text-secondary/80 text-sm">
-                  {t('about.stats.technologies')}
+                  {t("about.stats.technologies")}
                 </p>
               </div>
               <div className="text-center">
                 <p className="text-accent text-2xl font-bold">12</p>
-                <p className="text-color-text-secondary/80 text-sm">{t('about.stats.projects')}</p>
+                <p className="text-color-text-secondary/80 text-sm">
+                  {t("about.stats.projects")}
+                </p>
               </div>
               <div className="text-center">
                 <p className="text-accent text-2xl font-bold">3</p>
                 <p className="text-color-text-secondary/80 text-sm">
-                  {t('about.stats.years')}
+                  {t("about.stats.years")}
                 </p>
               </div>
             </div>
@@ -176,15 +277,20 @@ const About = () => {
                   <span className="mr-3">💻</span>
                   {t("about.categories.web")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {webTechnologies.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.webTechnologies).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -196,15 +302,20 @@ const About = () => {
                   <span className="mr-3">🔧</span>
                   {t("about.categories.infrastructure")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {systemAndInfra.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.systemAndInfra).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -216,15 +327,20 @@ const About = () => {
                   <span className="mr-3">🤝</span>
                   {t("about.categories.teamwork")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {teamWork.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.teamWork).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -236,15 +352,20 @@ const About = () => {
                   <span className="mr-3">🔧</span>
                   {t("about.categories.programming")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {programLang.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.programLang).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -256,15 +377,20 @@ const About = () => {
                   <span className="mr-3">🗃️</span>
                   {t("about.categories.databases")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {databases.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.databases).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -276,15 +402,20 @@ const About = () => {
                   <span className="mr-3">⚙️</span>
                   {t("about.categories.systems")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {systemsAndHardware.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.systemsAndHardware).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -296,15 +427,20 @@ const About = () => {
                   <span className="mr-3">📝</span>
                   {t("about.categories.other")}
                 </h4>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                  {otherSkills.map((skill) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {Object.entries(languages.otherSkills).map(([skill, data]) => (
                     <div
                       key={skill}
-                      className="bg-primary border border-secondary p-3 rounded-lg text-center hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
+                      className="bg-primary border border-secondary p-3 rounded-lg hover:bg-secondary transition-colors duration-300 hover:border-accent/30"
                     >
-                      <span className="text-color-text-secondary font-medium text-sm">
-                        {skill}
-                      </span>
+                      <div className="flex justify-between items-center">
+                        <span className="text-color-text-secondary font-medium text-sm">
+                          {skill}
+                        </span>
+                        <span className={`${getLevelColor(data.level)} text-xs font-semibold`}>
+                          {data.level}
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
