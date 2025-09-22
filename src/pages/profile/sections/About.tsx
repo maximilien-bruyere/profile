@@ -21,10 +21,10 @@ const About = () => {
         level: t("levels.acceptable"),
       },
       "React TypeScript": {
-        level: t("levels.good"),
+        level: t("levels.acceptable"),
       },
       "Tailwind CSS": {
-        level: t("levels.good"),
+        level: t("levels.acceptable"),
       },
       NestJS: {
         level: t("levels.passable"),
@@ -79,10 +79,10 @@ const About = () => {
         level: t("levels.acceptable"),
       },
       Cisco: {
-        level: t("levels.veryGood"),
+        level: t("levels.good"),
       },
       Fortinet: {
-        level: t("levels.good"),
+        level: t("levels.acceptable"),
       },
       "Linux - RedHat": {
         level: t("levels.veryGood"),
